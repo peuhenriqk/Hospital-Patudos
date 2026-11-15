@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Patudos Hospital Veterinário 24h | Olinda, PE</title>
+<meta name="description" content="Hospital veterinário 24 horas em Olinda. Medicina animal integrada: urgência e emergência, consultas, cirurgias, exames, vacinas, animais silvestres e banho e tosa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --orange:#E8700A;--orange-d:#B85400;--navy:#0E1A2F;--navy2:#16294A;--ink:#16233B;--bg:#FFFFFF;--tint:#FDF1E6;--soft:#F4F7FB;--muted:#52607A;--line:#E3E8EF;--card:#FFFFFF;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){color-scheme:dark;--ink:#F2F5FA;--bg:#0B1322;--tint:#1B1714;--soft:#111C30;--muted:#A9B4C8;--line:#24334D;--card:#111C30;--orange-d:#FF9A45}
+}
+:root[data-theme="dark"]{color-scheme:dark;--ink:#F2F5FA;--bg:#0B1322;--tint:#1B1714;--soft:#111C30;--muted:#A9B4C8;--line:#24334D;--card:#111C30;--orange-d:#FF9A45}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 100px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--navy);z-index:40}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,sans-serif;line-height:1.08;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+.paw{width:1em;height:1em;fill:currentColor;flex:none}
+.ico{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+/* topo */
+.util{background:var(--navy);color:#C9D4E8;font-size:14px}
+.util .wrap{display:flex;justify-content:space-between;gap:16px;padding:8px 0;flex-wrap:wrap}
+.util a{text-decoration:none;font-weight:600;color:#fff}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:800 21px "Bricolage Grotesque",sans-serif}
+.brand img{width:50px;height:50px;border-radius:50%;display:block}
+nav{display:flex;gap:26px;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--orange);color:#fff;font:600 17px Figtree,sans-serif;padding:15px 26px;border-radius:999px;text-decoration:none;border:2px solid var(--orange);transition:background .2s}
+.btn:hover{background:var(--orange-d);border-color:var(--orange-d)}
+.btn.line{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}
+.btn.line:hover{border-color:var(--orange);background:transparent}
+.btn.sm{padding:10px 20px;font-size:15px}
+/* hero */
+.hero{background:radial-gradient(900px 500px at 85% 10%,rgba(232,112,10,.35),transparent 60%),linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;padding:84px 0 0}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(42px,6.2vw,76px);font-weight:800}
+.hero p{font-size:20px;color:#C9D4E8;max-width:33em;margin:24px 0 34px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.live{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:24px;padding:28px;backdrop-filter:blur(6px)}
+.live .top{display:flex;align-items:center;gap:12px;font:700 20px "Bricolage Grotesque",sans-serif}
+.dot{width:12px;height:12px;border-radius:50%;background:#3DDC84;box-shadow:0 0 0 0 rgba(61,220,132,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 12px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+.live .big{font:800 88px/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.05em;margin:18px 0 4px;color:var(--orange)}
+.live .big small{font-size:.4em;color:#fff;letter-spacing:-.02em;margin-left:6px}
+.live ul{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:10px;color:#DCE4F2}
+.live li{display:flex;gap:10px;align-items:center}
+.live li .paw{color:var(--orange)}
+.trust{margin-top:72px;border-top:1px solid rgba(255,255,255,.14)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.trust div{padding:26px 22px;border-left:1px solid rgba(255,255,255,.14)}
+.trust div:first-child{border-left:0;padding-left:0}
+.trust b{display:block;font:800 30px "Bricolage Grotesque",sans-serif;color:#fff}
+.trust span{color:#AEBBD3;font-size:15px}
+/* secoes */
+section{padding:92px 0}
+.head{max-width:38em;margin-bottom:48px}
+.head h2,.split h2{font-size:clamp(32px,4.4vw,52px);font-weight:800}
+.head p{color:var(--muted);margin:16px 0 0;font-size:19px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px 24px;transition:transform .2s,border-color .2s}
+.svc:hover{transform:translateY(-4px);border-color:var(--orange)}
+.svc .tile{width:56px;height:56px;border-radius:16px;background:var(--tint);color:var(--orange);display:grid;place-items:center;margin-bottom:20px}
+.svc h3{font-size:21px;font-weight:700}
+.svc p{margin:8px 0 0;color:var(--muted);font-size:16px}
+.soft{background:var(--soft)}
+.split .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.split p{color:var(--muted);font-size:19px;margin:18px 0 0}
+.checks{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px}
+.checks li{display:flex;gap:14px;align-items:flex-start;font-weight:500}
+.checks .paw{color:var(--orange);font-size:24px;margin-top:2px}
+.panel{background:var(--navy);color:#fff;border-radius:28px;padding:40px;position:relative;overflow:hidden}
+.panel::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:var(--orange);opacity:.18;right:-70px;top:-70px}
+.panel h3{font-size:28px;font-weight:800;position:relative}
+.panel p{color:#C9D4E8;font-size:17px;position:relative;margin:10px 0 0}
+.steps{display:grid;gap:0;margin-top:26px;position:relative}
+.steps div{padding:18px 0;border-top:1px solid rgba(255,255,255,.16);display:flex;justify-content:space-between;gap:16px}
+.steps b{font:700 19px "Bricolage Grotesque",sans-serif}
+.steps span{color:#AEBBD3;font-size:15px;text-align:right}
+.signs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sign{border-left:5px solid var(--orange);background:var(--card);border-radius:0 16px 16px 0;padding:18px 20px;font-weight:500;border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.note{margin-top:26px;color:var(--muted);max-width:44em}
+.insta{background:linear-gradient(120deg,var(--orange),#F5A04A);color:#fff;border-radius:32px;padding:56px;display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between}
+.insta h2{font-size:clamp(30px,4vw,46px);font-weight:800;max-width:15em}
+.insta p{margin:12px 0 0;font-size:18px;max-width:30em;opacity:.95}
+.insta .btn{background:var(--navy);border-color:var(--navy)}
+.loc{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{border:1px solid var(--line);border-radius:22px;padding:30px;background:var(--card)}
+.card h3{font-size:22px;font-weight:700;margin-bottom:14px}
+.row{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+.row b{font-weight:600}.row span,.row a{color:var(--muted);text-align:right;text-decoration:none}
+.row a{color:var(--orange-d);font-weight:600}
+.map{display:grid;place-content:center;text-align:center;gap:14px;background:var(--tint);min-height:280px}
+.map .paw{font-size:54px;color:var(--orange);margin:auto}
+.cta{background:var(--navy);color:#fff;padding:84px 0;text-align:center}
+.cta h2{font-size:clamp(32px,5vw,58px);font-weight:800;max-width:14em;margin:0 auto}
+.cta p{color:#C9D4E8;font-size:20px;margin:18px auto 32px;max-width:30em}
+footer{background:var(--navy);color:#8FA0BF;border-top:1px solid rgba(255,255,255,.12);padding:30px 0;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{text-decoration:none;color:#C9D4E8}
+.fab{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(env(safe-area-inset-bottom,0px) + 16px);z-index:35;display:none;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.tour .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.tour h2{font-size:clamp(32px,4.4vw,52px);font-weight:800}
+.tour p{color:var(--muted);font-size:19px;margin:18px 0 0}
+.phones{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:560px){.phones{grid-template-columns:1fr;max-width:340px;margin-inline:auto}}
+.phone{width:100%;aspect-ratio:9/16;border-radius:32px;overflow:hidden;background:var(--navy);border:6px solid var(--navy);box-shadow:0 24px 60px rgba(14,26,47,.28)}
+.phone video{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:980px){.tour .wrap{grid-template-columns:1fr;gap:36px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .hero .wrap,.split .wrap,.loc{grid-template-columns:1fr;gap:36px}
+  .trust .wrap{grid-template-columns:repeat(2,1fr)}
+  .trust div:nth-child(3){border-left:0;padding-left:0}
+  .signs{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:700px){
+  nav,.bar .btn{display:none}
+  .hero{padding-top:48px}.trust{margin-top:48px}
+  section{padding:64px 0}
+  .grid,.signs{grid-template-columns:1fr}
+  .insta{padding:36px 26px}.panel{padding:28px}
+  .fab{display:inline-flex}
+  .util .hide{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.dot{animation:none}.btn,.svc{transition:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="paw" viewBox="0 0 64 64"><ellipse cx="32" cy="42" rx="15" ry="12"/><ellipse cx="13" cy="27" rx="6.5" ry="8.5"/><ellipse cx="25" cy="14" rx="6.5" ry="8.5"/><ellipse cx="39" cy="14" rx="6.5" ry="8.5"/><ellipse cx="51" cy="27" rx="6.5" ry="8.5"/></symbol>
+</svg>
+
+<div class="util"><div class="wrap"><span>Hospital veterinário 24 horas em Olinda, PE</span><span class="hide">Urgência e emergência todos os dias</span><a href="tel:+5581997229550">(81) 99722-9550</a></div></div>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#topo" aria-label="Patudos, início"><img src="img/logo.png" alt="Logo do Patudos"><span>Patudos</span></a>
+    <nav aria-label="Principal"><a href="#servicos">Serviços</a><a href="#integrada">Medicina integrada</a><a href="#hospital">Por dentro</a><a href="#alerta">Sinais de alerta</a><a href="#localizacao">Localização</a></nav>
+    <a class="btn sm" href="https://wa.me/5581997229550?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20o%20Patudos." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </div>
+</header>
+
+<main id="topo">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Cuidado de hospital, carinho de família.</h1>
+        <p>No Patudos, o seu pet encontra consultas, exames, cirurgias e urgência no mesmo lugar, com uma equipe de plantão dia e noite em Olinda.</p>
+        <div class="actions">
+          <a class="btn" href="https://wa.me/5581997229550?text=Ol%C3%A1!%20Preciso%20de%20atendimento%20para%20o%20meu%20pet." target="_blank" rel="noopener"><svg class="paw" aria-hidden="true"><use href="#paw"/></svg>Falar com a equipe</a>
+          <a class="btn line" href="tel:+5581997229550">Ligar agora</a>
+        </div>
+      </div>
+      <div class="live">
+        <div class="top"><span class="dot" aria-hidden="true"></span>Equipe de plantão</div>
+        <div class="big">24<small>horas</small></div>
+        <div style="color:#AEBBD3">Todos os dias, inclusive à noite.</div>
+        <ul>
+          <li><svg class="paw" aria-hidden="true"><use href="#paw"/></svg>Urgência e emergência</li>
+          <li><svg class="paw" aria-hidden="true"><use href="#paw"/></svg>Cirurgias</li>
+          <li><svg class="paw" aria-hidden="true"><use href="#paw"/></svg>Exames e ecocardiograma</li>
+        </ul>
+      </div>
+    </div>
+    <div class="trust">
+      <div class="wrap">
+        <div><b>24h</b><span>Atendimento todos os dias</span></div>
+        <div><b>Integrada</b><span>Medicina animal completa</span></div>
+        <div><b>Cães e gatos</b><span>E animais silvestres</span></div>
+        <div><b>+5 mil</b><span>Tutores nos acompanham no Instagram</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="servicos">
+    <div class="wrap">
+      <div class="head">
+        <h2>Cuidado completo, do check-up à emergência</h2>
+        <p>Tudo o que o seu pet precisa em um só hospital, sem precisar ser levado de um lugar para outro.</p>
+      </div>
+      <div class="grid">
+        <article class="svc"><div class="tile"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Atendimento 24 horas</h3><p>Plantão presencial todos os dias, a qualquer hora.</p></article>
+        <article class="svc"><div class="tile"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2M4.5 7l1.4 1.4M19.5 7l-1.4 1.4M6 20v-6a6 6 0 0112 0v6M4 20h16"/></svg></div><h3>Urgência e emergência</h3><p>Primeiro atendimento imediato para casos que não podem esperar.</p></article>
+        <article class="svc"><div class="tile"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></div><h3>Consultas</h3><p>Avaliação clínica completa e acompanhamento de rotina.</p></article>
+        <article class="svc"><div class="tile"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg></div><h3>Cirurgias</h3><p>Procedimentos realizados dentro do próprio hospital.</p></article>
+        <article class="svc"><div class="tile"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></div><h3>Exames</h3><p>Diagnóstico com apoio de exames, como o ecocardiograma.</p></article>
+        <article class="svc"><div class="tile"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4l6 6M12 6l6 6-8 8-3 1 1-3zM4 20l3-3"/></svg></div><h3>Vacinas</h3><p>Proteção em dia para cães e gatos.</p></article>
+        <article class="svc"><div class="tile"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4C10 4 5 9 5 15v1l-1 4 4-1h1c6 0 11-5 11-15zM9 15l7-7"/></svg></div><h3>Animais silvestres</h3><p>Atendimento também para pets não convencionais.</p></article>
+        <article class="svc"><div class="tile"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 01-12 0c0-4.5 6-11 6-11z"/></svg></div><h3>Banho e tosa</h3><p>Higiene e bem-estar com todo o carinho.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="integrada" class="soft split">
+    <div class="wrap">
+      <div>
+        <h2>Medicina animal integrada</h2>
+        <p>Cada área conversa com as outras. O pet que chega com um sintoma pode passar por consulta, exame e, se preciso, cirurgia sem sair do hospital.</p>
+        <ul class="checks">
+          <li><svg class="paw" aria-hidden="true"><use href="#paw"/></svg>Equipe que trabalha junta em cada caso</li>
+          <li><svg class="paw" aria-hidden="true"><use href="#paw"/></svg>Exames e procedimentos no mesmo endereço</li>
+          <li><svg class="paw" aria-hidden="true"><use href="#paw"/></svg>Plantão disponível para o que acontecer de madrugada</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Do primeiro contato à recuperação</h3>
+        <p>Um caminho simples para quem está preocupado.</p>
+        <div class="steps">
+          <div><b>Você chama</b><span>WhatsApp ou telefone</span></div>
+          <div><b>Avaliamos</b><span>Consulta ou urgência</span></div>
+          <div><b>Investigamos</b><span>Exames no hospital</span></div>
+          <div><b>Tratamos</b><span>Clínico ou cirúrgico</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="alerta">
+    <div class="wrap">
+      <div class="head">
+        <h2>Quando levar seu pet ao hospital</h2>
+        <p>Alguns sinais pedem atenção imediata. Na dúvida, chame a nossa equipe.</p>
+      </div>
+      <div class="signs">
+        <div class="sign">Dificuldade para respirar</div>
+        <div class="sign">Convulsões ou desmaios</div>
+        <div class="sign">Vômitos ou diarreia que não param</div>
+        <div class="sign">Sangramento ou trauma</div>
+        <div class="sign">Suspeita de intoxicação</div>
+        <div class="sign">Dor intensa ou apatia repentina</div>
+      </div>
+      <p class="note">Esta lista é um guia geral e não substitui a avaliação de um médico-veterinário. Se o seu pet estiver em risco, não espere: chame o hospital.</p>
+    </div>
+  </section>
+
+  <div class="wrap" style="padding-bottom:92px">
+    <div class="insta">
+      <div>
+        <h2>Acompanhe o dia a dia do Patudos</h2>
+        <p>Dicas de cuidado, bastidores do hospital e histórias dos nossos pacientes no Instagram.</p>
+      </div>
+      <a class="btn" href="https://www.instagram.com/patudosolinda" target="_blank" rel="noopener">Seguir @patudosolinda</a>
+    </div>
+  </div>
+
+  <section id="hospital" class="tour">
+    <div class="wrap">
+      <div>
+        <h2>Conheça o Patudos por dentro</h2>
+        <p>Uma recepção acolhedora, ambientes preparados e uma equipe que cuida de cada atendimento com atenção. Veja como é o dia a dia no hospital.</p>
+        <ul class="checks">
+          <li><svg class="paw" aria-hidden="true"><use href="#paw"/></svg>Recepção confortável para você e seu pet</li>
+          <li><svg class="paw" aria-hidden="true"><use href="#paw"/></svg>Exames e atendimentos feitos no próprio hospital</li>
+          <li><svg class="paw" aria-hidden="true"><use href="#paw"/></svg>Equipe dedicada em cada procedimento</li>
+        </ul>
+      </div>
+      <div class="phones">
+      <div class="phone">
+        <video controls playsinline preload="metadata" poster="img/recepcao-capa.jpg" aria-label="Vídeo mostrando a recepção e os atendimentos no Patudos"><source src="video/recepcao.mp4" type="video/mp4">Seu navegador não consegue reproduzir este vídeo.</video>
+      </div>
+      <div class="phone">
+        <video controls playsinline preload="metadata" poster="img/bastidores-capa.jpg" aria-label="Vídeo dos bastidores do Patudos, com a equipe em atendimento"><source src="video/bastidores.mp4" type="video/mp4">Seu navegador não consegue reproduzir este vídeo.</video>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="localizacao" class="soft">
+    <div class="wrap">
+      <div class="head"><h2>Onde estamos</h2><p>Em Olinda, Pernambuco, abertos a qualquer hora.</p></div>
+      <div class="loc">
+        <div class="card">
+          <h3>Informações de contato</h3>
+          <div class="row"><b>Horário</b><span>24 horas, todos os dias</span></div>
+          <div class="row"><b>WhatsApp</b><a href="https://wa.me/5581997229550" target="_blank" rel="noopener">(81) 99722-9550</a></div>
+          <div class="row"><b>Cidade</b><span>Olinda, PE</span></div>
+          <div class="row"><b>Instagram</b><a href="https://www.instagram.com/patudosolinda" target="_blank" rel="noopener">@patudosolinda</a></div>
+        </div>
+        <div class="card map">
+          <svg class="paw" aria-hidden="true"><use href="#paw"/></svg>
+          <h3>Como chegar</h3>
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Patudos+Hospital+Veterinario+Olinda+PE" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <div class="wrap">
+      <h2>Seu pet não pode esperar. Fale com a gente agora.</h2>
+      <p>A equipe de plantão está pronta para orientar e receber vocês.</p>
+      <a class="btn" href="https://wa.me/5581997229550?text=Ol%C3%A1!%20%C3%89%20uma%20urg%C3%AAncia%20com%20o%20meu%20pet." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap"><span>© 2026 Patudos Hospital Veterinário. Seu pet, nossa paixão.</span><a href="https://www.instagram.com/patudosolinda" target="_blank" rel="noopener">@patudosolinda</a></div>
+</footer>
+<a class="btn fab" href="https://wa.me/5581997229550?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20o%20Patudos." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+</body>
+</html>
